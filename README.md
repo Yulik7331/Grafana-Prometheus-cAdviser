@@ -38,13 +38,13 @@ nano monitoring_setup.sh
 ### 2. Сделайте скрипт исполняемым
 
 ```bash
-chmod +x monitoring_setup.sh
+chmod +x monitoring_setup_script.sh
 ```
 
 ### 3. Запустите скрипт
 
 ```bash
-sudo ./monitoring_setup.sh
+sudo ./monitoring_setup_script.sh
 ```
 
 ---
@@ -56,7 +56,7 @@ sudo ./monitoring_setup.sh
 #### На основном сервере (где будет Grafana):
 
 ```bash
-sudo ./monitoring_setup.sh
+sudo ./monitoring_setup_script.sh
 # Выберите: 1 - Установить основной сервер мониторинга
 # Введите порты (или оставьте по умолчанию)
 # Дождитесь завершения установки
@@ -85,7 +85,7 @@ sudo ./monitoring_setup.sh
 
 ```bash
 # На основном сервере
-sudo ./monitoring_setup.sh
+sudo ./monitoring_setup_script.sh
 # Выберите: 5 - Добавить сервер в конфигурацию
 # Введите IP адрес сервера: 92.38.34.113
 # Введите имя сервера: server106
@@ -115,7 +115,7 @@ sudo ./monitoring_setup.sh
 ### Шаг 3: Настройка Alertmanager
 
 ```bash
-sudo ./monitoring_setup.sh
+sudo ./monitoring_setup_script.sh
 # Выберите: 9 - Настроить алерты в Telegram
 # Введите Bot Token: 1234567890:ABCdefGHIjklMNOpqrsTUVwxyz
 # Введите Chat ID: 123456789
@@ -124,7 +124,7 @@ sudo ./monitoring_setup.sh
 ### Шаг 4: Тестирование
 
 ```bash
-sudo ./monitoring_setup.sh
+sudo ./monitoring_setup_script.sh
 # Выберите: 10 - Отправить тестовый алерт
 # Проверьте Telegram - должно прийти сообщение
 ```
@@ -203,7 +203,7 @@ sudo ./monitoring_setup.sh
 ### Проверка статуса сервисов
 
 ```bash
-sudo ./monitoring_setup.sh
+sudo ./monitoring_setup_script.sh
 # Выберите: 6 - Показать статус сервисов
 ```
 
@@ -224,7 +224,7 @@ docker logs alertmanager
 ### Перезапуск сервисов
 
 ```bash
-sudo ./monitoring_setup.sh
+sudo ./monitoring_setup_script.sh
 # Выберите: 7 - Перезапустить все сервисы
 ```
 
@@ -282,7 +282,7 @@ sudo firewall-cmd --reload
 Или используйте скрипт:
 
 ```bash
-sudo ./monitoring_setup.sh
+sudo ./monitoring_setup_script.sh
 # Выберите: 8 - Проверить firewall
 ```
 
@@ -404,11 +404,11 @@ docker restart node_exporter
 
 ```bash
 # 1. На новом сервере установите агенты
-sudo ./monitoring_setup.sh
+sudo ./monitoring_setup_script.sh
 # Выберите: 2
 
 # 2. На основном сервере добавьте в конфигурацию
-sudo ./monitoring_setup.sh
+sudo ./monitoring_setup_script.sh
 # Выберите: 5
 ```
 
