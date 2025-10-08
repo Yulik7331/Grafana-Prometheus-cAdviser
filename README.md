@@ -28,7 +28,7 @@
 
 ```bash
 # Скачайте скрипт на ваш сервер
-wget (https://github.com/Yulik7331/Grafana-Prometheus-cAdvisor/blob/main/monitoring_setup_script.sh)
+wget https://github.com/Yulik7331/Grafana-Prometheus-cAdvisor/blob/main/monitoring_setup_script.sh
 
 # Или создайте файл вручную
 nano monitoring_setup.sh
